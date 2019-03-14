@@ -1,0 +1,53 @@
+[01-Jan-2019 21:19:26 Asia/Singapore] PHP Fatal error:  Call to a member function userdata() on null in /home/ksudanamandiri/public_html/member/application/views/home.php on line 2
+[01-Jan-2019 21:19:27 Asia/Singapore] PHP Fatal error:  Call to a member function userdata() on null in /home/ksudanamandiri/public_html/member/application/views/home.php on line 2
+[24-Jan-2019 00:47:51 Asia/Singapore] PHP Parse error:  syntax error, unexpected '.' in /home/ksudanamandiri/public_html/member/application/controllers/history_toko.php on line 278
+[24-Jan-2019 00:47:51 Asia/Singapore] PHP Parse error:  syntax error, unexpected '.' in /home/ksudanamandiri/public_html/member/application/controllers/history_toko.php on line 278
+[24-Jan-2019 01:17:53 Asia/Singapore] PHP Parse error:  syntax error, unexpected ';', expecting ']' in /home/ksudanamandiri/public_html/member/application/controllers/history_toko.php on line 274
+[24-Jan-2019 21:51:38 Asia/Singapore] PHP Parse error:  syntax error, unexpected end of file, expecting function (T_FUNCTION) in /home/ksudanamandiri/public_html/member/application/controllers/ppob_c.php on line 26
+[28-Jan-2019 07:30:22 Asia/Singapore] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/ksudanamandiri/public_html/member/application/controllers/ppob_c.php on line 115
+[30-Jan-2019 23:39:40 Asia/Singapore] PHP Fatal error:  Call to undefined function get_member_detail() in /home/ksudanamandiri/public_html/member/application/controllers/ppob_c.php on line 117
+[31-Jan-2019 21:01:06 Asia/Singapore] PHP Fatal error:  Call to undefined function get_member_detail() in /home/ksudanamandiri/public_html/member/application/controllers/ppob_c.php on line 255
+[31-Jan-2019 21:35:07 Asia/Singapore] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ksudanamandiri/public_html/member/application/controllers/ppob_c.php on line 335
+[31-Jan-2019 21:35:18 Asia/Singapore] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ksudanamandiri/public_html/member/application/controllers/ppob_c.php on line 335
+[31-Jan-2019 21:35:18 Asia/Singapore] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ksudanamandiri/public_html/member/application/controllers/ppob_c.php on line 335
+[05-Feb-2019 16:29:50 Asia/Singapore] PHP Parse error:  syntax error, unexpected end of file in /home/ksudanamandiri/public_html/member/application/controllers/history_toko.php on line 151
+[05-Feb-2019 16:31:45 Asia/Singapore] PHP Parse error:  syntax error, unexpected end of file in /home/ksudanamandiri/public_html/member/application/controllers/history_toko.php on line 151
+[10-Feb-2019 15:45:10 Asia/Singapore] PHP Fatal error:  Call to undefined function emtpy() in /home/ksudanamandiri/public_html/member/application/controllers/ppob_c.php on line 587
+[10-Feb-2019 16:05:26 Asia/Singapore] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::num_rows() in /home/ksudanamandiri/public_html/member/application/views/ppob_view/detail_transaksi.php on line 76
+[10-Feb-2019 16:05:52 Asia/Singapore] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::row_array() in /home/ksudanamandiri/public_html/member/application/views/ppob_view/detail_transaksi.php on line 76
+[10-Feb-2019 16:05:54 Asia/Singapore] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::row_array() in /home/ksudanamandiri/public_html/member/application/views/ppob_view/detail_transaksi.php on line 76
+[10-Feb-2019 16:05:55 Asia/Singapore] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::row_array() in /home/ksudanamandiri/public_html/member/application/views/ppob_view/detail_transaksi.php on line 76
+[10-Feb-2019 16:07:04 Asia/Singapore] PHP Fatal error:  Call to undefined method CI_DB_mysql_driver::num_rows() in /home/ksudanamandiri/public_html/member/application/controllers/ppob_c.php on line 593
+[14-Feb-2019 23:22:49 Asia/Singapore] PHP Fatal error:  Cannot use object of type stdClass as array in /home/ontime/public_html/ksudanamandiri.com/member/application/controllers/pinjaman.php on line 362
+[14-Feb-2019 23:22:51 Asia/Singapore] PHP Fatal error:  Cannot use object of type stdClass as array in /home/ontime/public_html/ksudanamandiri.com/member/application/controllers/pinjaman.php on line 362
+[24-Feb-2019 07:07:10 Asia/Singapore] PHP Fatal error:  Cannot use object of type mysqli as array in /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman_trial/history_pinjaman.php on line 82
+[24-Feb-2019 07:07:11 Asia/Singapore] PHP Fatal error:  Cannot use object of type mysqli as array in /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman_trial/history_pinjaman.php on line 82
+[24-Feb-2019 07:10:20 Asia/Singapore] PHP Fatal error:  Cannot use object of type mysqli as array in /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman_trial/history_pinjaman.php on line 83
+[24-Feb-2019 07:12:41 Asia/Singapore] PHP Fatal error:  Cannot use object of type mysqli as array in /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman_trial/history_pinjaman.php on line 83
+[24-Feb-2019 08:45:50 Asia/Singapore] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string (2018.02.01) at position 5 (0): Double time specification' in /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman_trial/history_pinjaman.php:81
+Stack trace:
+#0 /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman_trial/history_pinjaman.php(81): DateTime->__construct('2018.02.01')
+#1 /home/ontime/public_html/ksudanamandiri.com/member/system/core/Loader.php(833): include('/home/ontime/pu...')
+#2 /home/ontime/public_html/ksudanamandiri.com/member/system/core/Loader.php(419): CI_Loader->_ci_load(Array)
+#3 /home/ontime/public_html/ksudanamandiri.com/member/application/controllers/pinjaman_trial.php(54): CI_Loader->view('pinjaman_trial/...', Array, true)
+#4 [internal function]: Pinjaman_trial->history_pinjaman()
+#5 /home/ontime/public_html/ksudanamandiri.com/member/system/core/CodeIgniter.php(359): call_user_func_array(Array, Array)
+#6 /home/ontime/public_html/ksudanam in /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman_trial/history_pinjaman.php on line 81
+[25-Feb-2019 11:31:30 Asia/Singapore] PHP Fatal error:  Cannot use object of type mysqli as array in /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman_trial/history_pinjaman2.php on line 95
+[25-Feb-2019 15:43:55 Asia/Singapore] PHP Fatal error:  Call to a member function result_array() on null in /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman_trial/history_pinjaman2.php on line 107
+[25-Feb-2019 15:44:05 Asia/Singapore] PHP Fatal error:  Call to a member function result_array() on null in /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman_trial/history_pinjaman2.php on line 107
+[25-Feb-2019 15:44:08 Asia/Singapore] PHP Fatal error:  Call to a member function result_array() on null in /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman_trial/history_pinjaman2.php on line 107
+[25-Feb-2019 15:52:54 Asia/Singapore] PHP Fatal error:  Cannot use object of type mysqli as array in /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman_trial/history_pinjaman2.php on line 118
+[03-Mar-2019 00:24:32 Asia/Singapore] PHP Fatal error:  Call to a member function last_query() on null in /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman/history_pinjaman.php on line 46
+[03-Mar-2019 00:24:37 Asia/Singapore] PHP Fatal error:  Call to a member function last_query() on null in /home/ontime/public_html/ksudanamandiri.com/member/application/views/pinjaman/history_pinjaman.php on line 46
+[04-Mar-2019 01:54:25 Asia/Singapore] PHP Fatal error:  Call to undefined function getMonthYear() in /home/ontime/public_html/ksudanamandiri.com/member/application/helpers/pinjaman_helper.php on line 106
+[04-Mar-2019 01:56:49 Asia/Singapore] PHP Fatal error:  Call to undefined function getMonthYear() in /home/ontime/public_html/ksudanamandiri.com/member/application/helpers/pinjaman_helper.php on line 106
+[04-Mar-2019 01:57:22 Asia/Singapore] PHP Fatal error:  Call to undefined function getMonthYear() in /home/ontime/public_html/ksudanamandiri.com/member/application/helpers/pinjaman_helper.php on line 106
+[04-Mar-2019 01:57:23 Asia/Singapore] PHP Fatal error:  Call to undefined function getMonthYear() in /home/ontime/public_html/ksudanamandiri.com/member/application/helpers/pinjaman_helper.php on line 106
+[04-Mar-2019 01:58:27 Asia/Singapore] PHP Fatal error:  Call to undefined function getMonthYear() in /home/ontime/public_html/ksudanamandiri.com/member/application/helpers/pinjaman_helper.php on line 106
+[04-Mar-2019 01:59:28 Asia/Singapore] PHP Fatal error:  Call to undefined function getMonthYear() in /home/ontime/public_html/ksudanamandiri.com/member/application/helpers/pinjaman_helper.php on line 106
+[04-Mar-2019 01:59:32 Asia/Singapore] PHP Fatal error:  Call to undefined function getMonthYear() in /home/ontime/public_html/ksudanamandiri.com/member/application/helpers/pinjaman_helper.php on line 106
+[04-Mar-2019 01:59:33 Asia/Singapore] PHP Fatal error:  Call to undefined function getMonthYear() in /home/ontime/public_html/ksudanamandiri.com/member/application/helpers/pinjaman_helper.php on line 106
+[04-Mar-2019 02:00:08 Asia/Singapore] PHP Fatal error:  Call to undefined function getMonthYear() in /home/ontime/public_html/ksudanamandiri.com/member/application/helpers/pinjaman_helper.php on line 106
+[04-Mar-2019 02:02:21 Asia/Singapore] PHP Fatal error:  Call to undefined function getMonthYear() in /home/ontime/public_html/ksudanamandiri.com/member/application/helpers/pinjaman_helper.php on line 106
+[04-Mar-2019 02:03:44 Asia/Singapore] PHP Fatal error:  Call to undefined function getMonthYear() in /home/ontime/public_html/ksudanamandiri.com/member/application/views/home.php on line 51

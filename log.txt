@@ -1,0 +1,189 @@
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5171032610690020' 
+							AND id_pinjam = 'PK0000679'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5171032610690020' 
+							AND id_pinjam = 'PK0000679'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5102051708500002' 
+							AND id_pinjam = 'PK0000140'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5102051708500002' 
+							AND id_pinjam = 'PK0000140'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-03' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5171032610690020' 
+							AND id_pinjam = 'PK0000679'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5102051708500002' 
+							AND id_pinjam = 'PK0000140'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5102051708500002' 
+							AND id_pinjam = 'PK0000140'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-03' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5104012202840002' 
+							AND id_pinjam = 'PK0000063'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-03' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5104012202840002' 
+							AND id_pinjam = 'PK0000063'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-03' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5171032610690020' 
+							AND id_pinjam = 'PK0000679'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5102085211870004' 
+							AND id_pinjam = 'PK0000556'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5102085211870004' 
+							AND id_pinjam = 'PK0000556'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5102085211870004' 
+							AND id_pinjam = 'PK0000556'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5104012202840002' 
+							AND id_pinjam = 'PK0000063'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-03' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5106030107700680' 
+							AND id_pinjam = 'PK0000001'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-03' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5106030107700680' 
+							AND id_pinjam = 'PK0000001'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-03' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5106030107700680' 
+							AND id_pinjam = 'PK0000001'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-03' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5106030107700680' 
+							AND id_pinjam = 'PK0000001'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-03' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5106030107700680' 
+							AND id_pinjam = 'PK0000001'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-03' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5106030107700680' 
+							AND id_pinjam = 'PK0000001'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-03' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5106030107700680' 
+							AND id_pinjam = 'PK0000001'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-03' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5102085211870004' 
+							AND id_pinjam = 'PK0000556'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5102085211870004' 
+							AND id_pinjam = 'PK0000556'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5108042303630002' 
+							AND id_pinjam = 'PK0000983'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-03' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5107015701950001' 
+							AND id_pinjam = 'PK0000211'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5107015701950001' 
+							AND id_pinjam = 'PK0000211'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
+3#
+						SELECT * FROM pinjaman_detail
+						WHERE username ='5107015701950001' 
+							AND id_pinjam = 'PK0000211'
+							AND DATE_FORMAT(tgl_bayar,'%Y-%m') = '2019-02' 
+						ORDER BY tgl_bayar
+					
