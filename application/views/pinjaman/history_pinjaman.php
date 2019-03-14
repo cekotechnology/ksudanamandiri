@@ -80,12 +80,13 @@ error_reporting(E_ALL);
 		if ($adaTunggakan > 0) { //Ada Tunggakan sebelum Februari 2019
 		
 			$lSisaPjm = $dPj->jumlah_disetujui;
-		
+			$add =$table_counter-1;
 			$idc = 3;
 			echo "
 				<tr class='text-right t-2'>
 				<td class='nomor'>{$table_counter}.</td>
-				<td class='tgl_byr'>01-02-2019</td>
+				<td class='tgl_byr'>".date('d-m-Y', strtotime('+'.$add.' month', strtotime($dPj->tgl_pengajuan))) ."	
+				</td>
 				<td class='wajib_bunga'>" . number_format($persenBunga * $dPj->jumlah_disetujui) . "</td>
 				<td class='byr_bunga'> - </td>
 				<td class='tunggakan'>" . number_format($adaTunggakan) . "</td>
@@ -129,10 +130,12 @@ error_reporting(E_ALL);
 				if($lSisaPjm != 0) {
 					$kewajibanBunga = $lSisaPjm * $persenBunga;
 					$lTunggakan = $lTunggakan+$kewajibanBunga-0;
+					$add =$table_counter-1;
 					echo "
 						<tr class='text-right t-5'>
 						<td class='nomor'>{$table_counter}.</td>
-						<td class='tgl_byr'>01-03-2019</td>
+						<td class='tgl_byr'>".date('d-m-Y', strtotime('+'.$add.' month', strtotime($dPj->tgl_pengajuan))) ."	
+				</td>
 						<td class='wajib_bunga'>" . number_format($kewajibanBunga) . "</td>
 						<td class='byr_bunga'>-</td>
 						<td class='tunggakan'>" . number_format($lTunggakan) . "</td>
@@ -249,51 +252,51 @@ error_reporting(E_ALL);
 				// file_put_contents("log.txt", "1#".$this->db->last_query().PHP_EOL, FILE_APPEND);
 				
 				$tglSkr       = date('Y-m-d');
-				if ($tglSkr <= $tglJt) {
-					$idc = 13;
-					echo "
-					<tr class='text-center t-6'>
-					<td colspan='7'>Belum Ada Angsuran</td>
-					</tr>
-					";
-				} else {
-					$idc = 14;
-					$tglTempo = date('Y-m', strtotime("+1 month", strtotime($tglJt))).'-01';
-					if($tglTempo <= $tglSkr) {
+				// if ($tglSkr <= $tglJt) {
+				// 	$idc = 13;
+				// 	echo "
+				// 	<tr class='text-center t-6'>
+				// 	<td colspan='7'>Belum Ada Angsuran</td>
+				// 	</tr>
+				// 	";
+				// } else {
+				// 	$idc = 14;
+				// 	$tglTempo = date('Y-m', strtotime("+1 month", strtotime($tglJt))).'-01';
+				// 	if($tglTempo <= $tglSkr) {
 						
-						$a_month_year_pure = str_replace("-","",$a_month_year);
-						$to_be_displayed = strval(date('Ym', strtotime("+1 month", strtotime($tglJt))));
+				// 		$a_month_year_pure = str_replace("-","",$a_month_year);
+				// 		$to_be_displayed = strval(date('Ym', strtotime("+1 month", strtotime($tglJt))));
 						
-						if(intval($to_be_displayed) >= intval($a_month_year_pure)){
-							$current_date_display_t7_obj = new stdClass();
-							$current_date_display_t7_obj->tgl_bayar = "01-".strval(date('m-Y', strtotime("+1 month", strtotime($tglJt))));
-							$current_date_display_t7_obj->wajib_bunga = number_format($persenBunga * $dPj->jumlah_disetujui);
-							$current_date_display_t7_obj->tunggakan = number_format($tunggakanJt + ($dPj->jumlah_disetujui * $persenBunga));
-							$current_date_display_t7_obj->sisapjm = number_format($dPj->jumlah_disetujui);					
+				// 		if(intval($to_be_displayed) >= intval($a_month_year_pure)){
+				// 			$current_date_display_t7_obj = new stdClass();
+				// 			$current_date_display_t7_obj->tgl_bayar = "01-".strval(date('m-Y', strtotime("+1 month", strtotime($tglJt))));
+				// 			$current_date_display_t7_obj->wajib_bunga = number_format($persenBunga * $dPj->jumlah_disetujui);
+				// 			$current_date_display_t7_obj->tunggakan = number_format($tunggakanJt + ($dPj->jumlah_disetujui * $persenBunga));
+				// 			$current_date_display_t7_obj->sisapjm = number_format($dPj->jumlah_disetujui);					
 							
-							if($newest_date_display_t7_obj != $current_date_display_t7_obj){
+				// 			if($newest_date_display_t7_obj != $current_date_display_t7_obj){
 								
-								$lTunggakan = intval(str_replace(",","",$current_date_display_t7_obj->tunggakan));
+				// 				$lTunggakan = intval(str_replace(",","",$current_date_display_t7_obj->tunggakan));
 								
-								echo "
-									<tr class='text-right t-7'>
-									<td class='nomor'>{$table_counter}.</td>
-									<td class='tgl_byr'>{$current_date_display_t7_obj->tgl_bayar}</td>
-									<td class='wajib_bunga'>" . $current_date_display_t7_obj->wajib_bunga . "</td>
-									<td class='byr_bunga'>-</td>
-									<td class='tunggakan'>" . $current_date_display_t7_obj->tunggakan . "</td>
-									<td class='pokok'>-</td>
-									<td class='sisapjm'>" . $current_date_display_t7_obj->sisapjm . "</td>
-									</tr>
-								";
+				// 				echo "
+				// 					<tr class='text-right t-7'>
+				// 					<td class='nomor'>{$table_counter}.</td>
+				// 					<td class='tgl_byr'>{$current_date_display_t7_obj->tgl_bayar}</td>
+				// 					<td class='wajib_bunga'>" . $current_date_display_t7_obj->wajib_bunga . "</td>
+				// 					<td class='byr_bunga'>-</td>
+				// 					<td class='tunggakan'>" . $current_date_display_t7_obj->tunggakan . "</td>
+				// 					<td class='pokok'>-</td>
+				// 					<td class='sisapjm'>" . $current_date_display_t7_obj->sisapjm . "</td>
+				// 					</tr>
+				// 				";
 								
-								$table_counter++; //setiap kali echo $table_counter, $table_counter++;
+				// 				$table_counter++; //setiap kali echo $table_counter, $table_counter++;
 								
-								$newest_date_display_t7_obj = $current_date_display_t7_obj;
-							}
-						}
-					}
-				}
+				// 				$newest_date_display_t7_obj = $current_date_display_t7_obj;
+				// 			}
+				// 		}
+				// 	}
+				// }
 			}
 		}
 	} else {

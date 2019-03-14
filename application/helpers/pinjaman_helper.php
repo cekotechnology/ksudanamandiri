@@ -90,27 +90,20 @@ function getTotalTunggakanBunga($user_session, $db_conn){
 
 		$adaTunggakan = getTunggakan($user_session, $dPj->id_pinjam);
 		//HEADER HISTORY
-
+// var_dump($adaTunggakan);
 		$lSisaPjm = 0;
-
 		if ($adaTunggakan > 0) { //Ada Tunggakan sebelum Februari 2019
-		
 			$lSisaPjm = $dPj->jumlah_disetujui;
-			
 			$t_2_last_obj = new stdClass();
 			$t_2_last_obj->tgl_bayar = '01-02-2019';
 			$t_2_last_obj->wajib_bunga = number_format($persenBunga * $dPj->jumlah_disetujui);
 			$t_2_last_obj->sisapjm = number_format($dPj->jumlah_disetujui);			
 			
 			$totalTunggakanBunga = $adaTunggakan;
-		} else {
-			
-		}
+		} 
 	//END HEADER HISTORY
-	
 		//array month_year mulai ===========================================================================
 		$month_year = '';
-
 		$count = 0;
 		$month_year_arr = array();
 		while($month_year != strval('2019-02')){
@@ -145,8 +138,8 @@ function getTotalTunggakanBunga($user_session, $db_conn){
 					$t_5_current_obj->tgl_bayar = '01-03-2019';
 					$t_5_current_obj->wajib_bunga = number_format($kewajibanBunga);
 					$t_5_current_obj->sisapjm = number_format($lSisaPjm);						
-					
-					if($t_5_current_obj != $t_7_last_obj){					
+					// var_dump($t_7_last_obj,'<br>',$t_5_current_obj);
+					if($t_5_current_obj === $t_7_last_obj){					
 						$totalTunggakanBunga = $lTunggakan;
 					}
 				}				
@@ -160,8 +153,6 @@ function getTotalTunggakanBunga($user_session, $db_conn){
 					and year(tgl_bayar) = {$cursor_year}
 				GROUP BY DATE_FORMAT(tgl_bayar, '%Y-%m')
 			");
-			
-			
 			$no           = 3;
 
 			// file_put_contents("log.txt", "1#".$db_conn->last_query().PHP_EOL, FILE_APPEND);

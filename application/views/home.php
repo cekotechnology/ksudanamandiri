@@ -158,11 +158,11 @@ Upgrade dapat dilakukan setelah sebelumnya melakukan pembelian/request SALDO E-R
    if ($cekAngs->num_rows() > 0) {
     $dAngs = $cekAngs->row();
     if ($tglSkr <= $dAngs->tgl_jatuh_tempo) {
-     $idx      = 1;
-     $sisaPjmx = $dAngs->sisa_pinjaman;
+      $idx      = 1;
+      $sisaPjmx = $dAngs->sisa_pinjaman;
     } else {
-     $idx      = 2;
-     $sisaPjmx = $dAngs->sisa_pinjaman;
+      $idx      = 2;
+      $sisaPjmx = $dAngs->sisa_pinjaman;
     }
    } else {
 		if(isset($dPjm) && isset($dPjm->tanggal_pengajuan))
