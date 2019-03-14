@@ -76,19 +76,25 @@ function getTotalTunggakanBunga($user_session, $db_conn){
 			username = ? 
 			AND `status` = 'DITERIMA'
 	", array($user_session));
-	
+
 	// file_put_contents("log.txt", "1#".$db_conn->last_query().PHP_EOL, FILE_APPEND);	
 	
 	$persenBunga  = 2.5 / 100;
 	
 	$totalTunggakanBunga = 0;
-
+	$totalbayarBunga =0;
 	if ($dataPinjaman->num_rows() > 0) {
 		$dPj          = $dataPinjaman->row();
 
 		$totalTunggakanBunga = 0;
 
 		$adaTunggakan = getTunggakan($user_session, $dPj->id_pinjam);
+
+		// var_dump($dPj->id_pinjam);
+		$jumBayar =  $db_conn->query("SELECT sum(bunga) bayar_bunga,id_pinjam,username from pinjaman_detail where id_pinjam='{$dPj->id_pinjam}' 
+		GROUP BY  id_pinjam,username");
+		$totalbayarBunga          = $jumBayar->row();
+
 		//HEADER HISTORY
 // var_dump($adaTunggakan);
 		$lSisaPjm = 0;
@@ -268,5 +274,5 @@ function getTotalTunggakanBunga($user_session, $db_conn){
 		}
 	}
 	
-	return $totalTunggakanBunga;
+	return $totalTunggakanBunga-$totalbayarBunga->bayar_bunga;
 }
