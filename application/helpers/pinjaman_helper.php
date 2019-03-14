@@ -107,7 +107,8 @@ function getTotalTunggakanBunga($user_session, $db_conn){
 			
 			$totalTunggakanBunga = $adaTunggakan;
 		} 
-	//END HEADER HISTORY
+	
+		//END HEADER HISTORY
 		//array month_year mulai ===========================================================================
 		$month_year = '';
 		$count = 0;
@@ -211,6 +212,7 @@ function getTotalTunggakanBunga($user_session, $db_conn){
 						$lTunggakan = $lTunggakan + 0 - intval(str_replace(",","",$byrBunga));
 
 						$totalTunggakanBunga = $lTunggakan;
+						
 					}
 
 					if ($lSisaPjm == "0") {
@@ -273,6 +275,10 @@ function getTotalTunggakanBunga($user_session, $db_conn){
 			}
 		}
 	}
-	
-	return $totalTunggakanBunga-$totalbayarBunga->bayar_bunga;
+	$terbayarBunga =$totalbayarBunga->bayar_bunga;
+	if($totalbayarBunga->bayar_bunga ===NULL){
+		$terbayarBunga=0;
+	}
+	$total = intval(str_replace(",","",$totalTunggakanBunga));
+	return number_format($total-$terbayarBunga);
 }
